@@ -1,16 +1,6 @@
-# webpack-typescript-postcss-universal-starter
+# ng2-webpack-ts-postcss-karma-starter
 
 <p>Simple, well-structured, modern boilerplate for Angular2 projects</p>
-<br/><br/>
-
-## When to use
-
-This is a great choice if you want to:
-
-1. Start coding in Angular 2 immediately
-2. Configure testing and authorization by yourself or not to use them
-3. Experiment with Webpack configuration
-4. Avoid complex project structure and unnecessary dependencies
 <br/><br/>
 
 ## Main features
@@ -25,6 +15,8 @@ Plugins used:
  * [css-mqpacker](http://cssnext.io/)
  <br/><br/>
 4. [Webpack Dev Server 2.1.0](https://github.com/webpack/webpack-dev-server) - to enable live-reloading and provide fast in-memory access to the webpack assets
+5. [Karma 1.5.0](https://karma-runner.github.io) - JS test runner
+6. [Jasmine 2.5.3](https://jasmine.github.io) - testing JS framework
 5. [TSLint 4.4.2](https://palantir.github.io/tslint/) as a linter for the TypeScript
 6. [Bootstrap 3.3.7](http://getbootstrap.com/) (as an example how to load third-party libraries, check out [Installation guide](#installation) to easily remove it from your project)
 <br/><br/>
@@ -46,6 +38,7 @@ Plugins used:
 1. ```npm start``` to start development server
 2. Open your browser on ```http://localhost:3000```
 3. ```npm run build``` to bundle files into ```./build``` directory
+4. ```npm run test``` to run tests
 <br/><br/>
 
 ## Project structure
@@ -67,6 +60,8 @@ Plugins used:
 │   └── index.html
 ├── webpack.dev.js                          # webpack configuration file for development
 ├── webpack.prod.js                         # webpack configuration file for production
+├── webpack.test.js                         # webpack configuration file for tests
+├── karma.config.js                         # karma configuration
 ├── postcss.config.js                       # PostCSS config file
 ├── tsconfig.json                           # TypeScript configuration
 ├── tslint.json                             # TSLint rules
